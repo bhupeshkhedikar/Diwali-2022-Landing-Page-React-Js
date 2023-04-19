@@ -1,0 +1,254 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.container{
+width: 100%;
+height: 80%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+overflow: hidden;
+}
+.container2{
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  }
+.layer { 
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+
+.layer-1{
+  width: 50%;
+  height: auto;
+  animation: rotate 40s infinite reverse;
+}
+
+.layer-2{
+
+  animation: rotate 40s infinite linear;
+}
+
+.menu:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+.pop-outin {
+  animation: 2s anim-popoutin ease infinite;
+}
+
+footer{
+  position: absolute;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.layer-4{
+  width: 10%;
+  height: auto;
+  height: auto;
+  top: 90%;
+  left: 7%;
+}
+
+.layer-5{
+  width: 10%;
+  height: auto;
+  height: auto;
+  top: 90%;
+ left: 95%;
+}
+
+.layer-6{
+  position: static;
+  width:"100%"
+}
+
+.layer-7{
+  position: static;
+  width:"100%"
+}
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+  width:"100%";
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+
+
+@keyframes rotate{
+  100% { transform:translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  cursor: url(https://abs.twimg.com/emoji/v2/72x72/1f525.png) 36 36, auto;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 75px;
+ background: #21cc3e;
+ background-image: url("https://editablegifs.com/gifs/gifs/fireworks-1/output.gif?egv=3042");
+ background-size: 300px 100px;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+ z-index: 9999;
+}
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background:  #21cc3e;
+ background-image: url("https://editablegifs.com/gifs/gifs/fireworks-1/output.gif?egv=3042");
+
+  background-size: 100px 100px;
+ margin: auto;
+}
+nav .navbar .logo a{
+  color: rgb(58, 15, 230);
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+@keyframes movingTopToBottom {
+  0% {
+    bottom: -15px;
+  }
+  95% {
+    bottom: 150px;
+  }
+  100% {
+    bottom: 165px;
+  }
+}
+#divTAReviews {
+  animation: movingTopToBottom 2s linear infinite;
+  position: relative;
+  font-family:"white";
+  display: inline-block;
+  padding: 10px;
+}
